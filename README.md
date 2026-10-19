@@ -1,6 +1,5 @@
 # Gemma Embeddings Practice
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Muskan-Savita/gemma-embeddings-practice/blob/main/notebooks/embeddingpractise.ipynb)
-
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Muskan-Savita/gemma-embeddings-practice/blob/main/notebooks/gemma-embeddings-practice.ipynb)
 This project teaches how to create text embeddings with Gemma 2, sanitize personal data (PII) before embedding, and run semantic search with FAISS.
 
 ## Project structure
