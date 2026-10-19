@@ -28,7 +28,14 @@ gemma-embeddings-practice/
 | Gemma 2 2B (mean pooling) | 0.8 |
 | all-MiniLM-L6-v2 | 1.0 |
 
-The test set is small, so this is not conclusive proof. Using a generative model (Gemma) directly for embeddings is less reliable than using a dedicated embedding model.
+## Results (20 documents, 10 queries)
+
+| Model | Top-3 accuracy |
+|---|---|
+| Gemma 2 2B (mean pooling) | 0.5 |
+| all-MiniLM-L6-v2 | 0.9 |
+
+The dataset is small and custom-made, so these numbers are a rough comparison, not a benchmark. The Gemma results show that mean pooling on a generative model is much weaker than a dedicated embedding model for this task.
 
 ## Setup
 
