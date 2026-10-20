@@ -35,7 +35,15 @@ gemma-embeddings-practice/
 | Gemma 2 2B (mean pooling) | 0.5 |
 | all-MiniLM-L6-v2 | 0.9 |
 
-The dataset is small and custom-made, so these numbers are a rough comparison, not a benchmark. The Gemma results show that mean pooling on a generative model is much weaker than a dedicated embedding model for this task.
+## PII detection results (16 test sentences)
+
+| Metric | Value |
+|---|---|
+| Precision | 1.00 |
+| Recall | 1.00 |
+
+The test set is small and hand-written. It includes edge cases such as an invalid Luhn card, a 10-digit phone number, a `+91` number, a date, an order ID, and a PIN code. These results do not prove the detector works on all real data.
+
 
 ## Setup
 
