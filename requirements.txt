@@ -1,0 +1,6 @@
+transformers
+accelerate
+faiss-cpu
+sentence-transformers
+torch
+numpy
