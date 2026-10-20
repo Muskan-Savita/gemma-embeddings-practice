@@ -4,15 +4,31 @@ This project teaches how to create text embeddings with Gemma 2, sanitize person
 
 ## Project structure
 
-```
-gemma-embeddings-practice/
-├── app/
-│   ├── __init__.py
-│   └── detection.py   # PII detection (regex + Luhn check) and sanitize
-├── .gitignore
-└── README.md
-```
+## API
 
+The project includes a small FastAPI service.
+
+Run it locally:
+
+    pip install -r requirements.txt
+    uvicorn app.main:app --reload
+
+Endpoints:
+
+- `GET /health`: checks that the service is running.
+- `POST /sanitize`: takes `{"text": "..."}` and returns the sanitized text and the PII types found.
+
+Example:
+
+    curl -X POST http://127.0.0.1:8000/sanitize \
+      -H "Content-Type: application/json" \
+      -d '{"text": "Mera email jane@example.com hai"}'
+
+Response:
+
+    {"sanitized": "Mera email <EMAIL> hai", "findings": ["EMAIL"]}
+
+    
 ## What was done
 
 1. **PII detection:** Email, phone, SSN, IPv4, and credit card (validated with the Luhn check) are detected with regex.
