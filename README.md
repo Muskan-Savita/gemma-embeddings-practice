@@ -44,6 +44,9 @@ Response:
 | Gemma 2 2B (mean pooling) | 0.8 |
 | all-MiniLM-L6-v2 | 1.0 |
 
+## Live API
+https://gemma-embeddings-practice-1.onrender.com/docs
+
 ## Results (20 documents, 10 queries)
 
 | Model | Top-3 accuracy |
